@@ -1,21 +1,20 @@
-
 with open('day_8_file.txt') as file:
     lines = file.readlines()
 
 
 # --part1
-# outputs_only = [line.split('|')[1].strip() for line in lines]
-#
-# famous_instances = 0
-# for output in outputs_only:
-#     for signal in output.split():
-#         if len(signal) in [2, 3, 4, 7]:
-#             famous_instances += 1
-#
-# print(famous_instances)
+outputs_only = [line.split('|')[1].strip() for line in lines]
+
+famous_instances = 0
+for output in outputs_only:
+    for signal in output.split():
+        if len(signal) in [2, 3, 4, 7]:
+            famous_instances += 1
+
+print(famous_instances)
 
 # --part2
-correct_patterns= {
+correct_patterns = {
                     0: {'a', 'b', 'c', 'e', 'f', 'g'},
                     1: {'c', 'f'},
                     2: {'a', 'c', 'd', 'e', 'g'},
