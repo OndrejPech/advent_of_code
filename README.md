@@ -1,3 +1,7 @@
-# advent_of_code_2021
+# Advent of code
 
-my first try on AOC. finished first 10 days without any help.
+### 2021
+first 10 days
+
+### 2022
+first 7 days
